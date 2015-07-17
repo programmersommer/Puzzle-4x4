@@ -1,0 +1,44 @@
+﻿<SettingsFlyout
+    x:Class="_15Win8.InfoFlyout"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_15Win8"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    IconSource="Assets/SmallLogo.png"
+    Title="Help"
+    d:DesignWidth="346">
+
+    <!-- This StackPanel acts as a root panel for vertical layout of the content sections -->
+    <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
+
+        <!-- The StackPanel(s) below define individual content sections -->
+
+        <!-- Content Section 1-->
+        <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}">
+
+            <!-- Section 1 header -->
+            <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="Puzzle 4x4" />
+
+            <!-- Section 1 body -->
+
+            <TextBlock Margin="0,0,0,25" TextWrapping="Wrap"  Style="{StaticResource BodyTextBlockStyle}" >
+                 Very difficult interface consist of 2 buttons
+                     <LineBreak />
+               You could select image file or make a photo with camera
+                     <LineBreak /> <LineBreak />
+             Later you should select folder an it would be created web-page with game inside this folder   
+                    <LineBreak /><LineBreak />
+                Just open web-page with fafourite browser and play
+            </TextBlock>
+
+            <HyperlinkButton HorizontalAlignment="Center" NavigateUri="http://www.alexalex.ru/" FontFamily="Segoe UI" FontSize="20" Foreground="#FFF9EA55">AlexAlex.ru</HyperlinkButton>
+
+
+        </StackPanel>
+
+        <!-- Define more Content Sections below as necessary -->
+
+    </StackPanel>
+</SettingsFlyout>

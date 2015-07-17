@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="42725AlexejSommer.446660954E5BE" Publisher="CN=BBB9B3FD-6F0C-49D8-914A-16CD3F3E6152" Version="1.2.0.0" />
+  <Properties>
+    <DisplayName>Puzzle 4x4</DisplayName>
+    <PublisherDisplayName>Alexej Sommer</PublisherDisplayName>
+    <Logo>Store.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="_15Win8.App">
+      <m2:VisualElements DisplayName="Puzzle 4x4" Description="XAML/C# Application that will create a Puzzle game from your photo or image" BackgroundColor="#1d8722" ForegroundText="light" ToastCapable="true" Square150x150Logo="Assets\Logo1.png" Square30x30Logo="Assets\SmallIcon.png">
+        <m2:DefaultTile ShortName="Пазл Пятнашки" Wide310x150Logo="Assets\WideLogo.png">
+        </m2:DefaultTile>
+        <m2:InitialRotationPreference>
+          <m2:Rotation Preference="portrait" />
+          <m2:Rotation Preference="landscape" />
+        </m2:InitialRotationPreference>
+        <m2:SplashScreen Image="Assets\Splash.png" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="removableStorage" />
+    <DeviceCapability Name="webcam" />
+  </Capabilities>
+</Package>

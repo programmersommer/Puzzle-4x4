@@ -1,0 +1,46 @@
+﻿<Page
+    x:Class="_15Win8.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_15Win8"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    
+    <Grid x:Name="mainGrid" Background="#FF1D8722" Margin="50,50,50,50">
+        <Image x:Name="imgHidden" Visibility="Collapsed" Width="700" Height="500">
+        </Image>
+        
+        <Image x:Name="imgVisible" Visibility="Visible" Width="700" Height="500">
+        </Image>
+
+        <Grid HorizontalAlignment="Stretch" VerticalAlignment="Top">
+     
+        <Button x:Name="btnSelectImage" HorizontalAlignment="Left" Width="200" Height="50" Content="Picture from file" Click="btnSelectImage_Click" Background="#FFCEEC14" Foreground="Black">
+        </Button>
+
+        <Button x:Name="btnImageFromCamera" HorizontalAlignment="Right" Width="200" Height="50" Content="Picture from camera" Click="btnImageFromCamera_Click" Background="#FFCEEC14" Foreground="Black">
+        </Button>
+            <Image Source="puzzle15.png" Width="248" Height="120" Visibility="Collapsed" x:Name="imgLogo" ></Image>
+            
+        </Grid> 
+    </Grid>
+
+
+    <Page.BottomAppBar>
+        <AppBar x:Name="bottomAppBar" Loaded="AppBar_Loaded" Padding="10,0,10,0" IsOpen="True">
+            <Grid>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="25,0,0,0">
+                
+                    <AppBarButton x:Uid="Tutorial" x:Name="btnTutorial"  Click="btnTutorial_Click" Icon="Help" Label="Help" />
+
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                </StackPanel>
+            </Grid>
+        </AppBar>
+    </Page.BottomAppBar>
+
+
+</Page>
